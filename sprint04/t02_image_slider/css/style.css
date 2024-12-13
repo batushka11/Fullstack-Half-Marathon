@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+div:first-child{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid black;
+}
+
+button{
+    height: 410px;
+    width: 50px;
+    position: relative;
+}
+
+img{
+    height: 400px;
+}
+
+button:first-child::after {
+    position: absolute;
+    top: 205px;;
+    left: 20px;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid gray;
+    border-bottom: 3px solid gray;
+    transform: rotate(45deg);
+}
+
+button:last-child::after {
+    position: absolute;
+    top: 205px;;
+    right: 20px;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid gray;
+    border-bottom: 3px solid gray;
+    transform: rotate(225deg);
+}
+
+.slide{
+    display: none;
+}
+
+.image {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes image {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

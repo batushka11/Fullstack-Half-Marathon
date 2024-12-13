@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Quiz</title>
+</head>
+<body>
+    <h1>What Thanos did for the Soul Stone?</h1>
+    <form id="quiz-form">
+        <input type="radio" name="answer" value="jumped" id="jumped">
+        <label for="jumped">Jumped from the mountain</label><br>
+        
+        <input type="radio" name="answer" value="keeper" id="keeper">
+        <label for="keeper">Made stone keeper to jump from the mountain</label><br>
+        
+        <input type="radio" name="answer" value="pushed" id="pushed">
+        <label for="pushed">Pushed Gamora off the mountain</label><br><br>
+        
+        <input type="button" value="I made a choice!" onclick="submitAnswer()">
+    </form>
+    <p id="response"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

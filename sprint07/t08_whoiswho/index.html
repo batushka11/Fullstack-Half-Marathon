@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="t08. Whoiswho">
+        <title>Whoiswho</title>
+        <style>
+        table {
+            border-spacing: initial;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Parsing CSV data</h1>
+        <div>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <button type="submit">Upload</button>
+                <br>
+                <a href="/filter">Reset Filters</a>
+            </form>
+            <div id="content" style="margin-top: 10px;">#TEXT#</div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>

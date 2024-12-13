@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <h1>Registration to Oracle RedBull Team</h1>
+    <form class="form" method="post" action="/registration" enctype="multipart/form-data" id="reg">
+        <input type="text" maxlength="30" placeholder="Login" name="Login" required>
+        <br>
+        <input type="text" maxlength="50" placeholder="Fullname" name="Fullname" required>
+        <br>
+        <input type="email" placeholder="Email" name="Email" required>
+        <br>
+        <input type="password" placeholder="Password" name="Password" required id="pwd">
+        <br>
+        <input type="password" placeholder="Repeat password" name="Repeat_password" required id="pwdcopy">
+        <br>
+        <input type="submit" class="btn" id="btn" value="Submit">
+        <br>
+        <span>Have an account?</span>
+        <a href="/login" class="sign-in">Sign In</a>
+    </form>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+         const reg = document.getElementById('reg');
+         const btn = document.getElementById('btn');
+ 
+         reg.addEventListener('submit', func =>{
+             func.preventDefault();
+ 
+             const pwd = document.getElementById('pwd').value;
+             const pwdcopy = document.getElementById('pwdcopy').value;
+ 
+             if(pwd === pwdcopy){
+                 const formData = new FormData(reg);
+ 
+                 fetch('/registration', {
+                     method: 'POST',
+                     body: formData
+                 })
+                 .then(response => response.json())
+                 .then(result => {
+                     if(result.success){
+                         alert(`Register succesfully! Hello, ${result.login}`);
+                         window.location.assign(`/home`);
+                     }
+                     else{
+                         alert(result.message);
+                     }
+                 })
+                 .catch(error => {
+                     console.error('Error:', error);
+                     alert('An error occurred while submitting the form.');
+                 });
+             }
+             else{
+                 alert('Password must be the same');
+             }
+         })
+    })
+ </script>
+</html>

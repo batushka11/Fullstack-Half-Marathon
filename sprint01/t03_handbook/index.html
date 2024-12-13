@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Handbook</h1>
+    <h1>Content of Handbook</h1>
+    <div class="wrapper">
+        <div class="box">
+            <ol>
+                <li><a href="#HTML">HTML</a>
+                    <ul>
+                        <li><a href="#first-html">h1</a></li>
+                        <li><a href="#second-html">table</a></li>
+                        <li><a href="#third-html">hr</a></li>
+                        <li><a href="#fourth-html">input</a></li>
+                        <li><a href="#fifth-html">button</a></li>
+                    </ul>
+                </li>
+                <li><a href="#CSS">CSS</a>
+                    <ul>
+                        <li><a href="#first-CSS">background</a></li>
+                        <li><a href="#second-CSS">opacity</a></li>
+                        <li><a href="#third-CSS">line-height</a></li>
+                        <li><a href="#fourth-CSS">text-transform</a></li>
+                        <li><a href="#fifth-CSS">border</a></li>
+                        <li><a href="#sixth-CSS">font-size</a></li>
+                    </ul>
+                </li>
+                <li><a href="#CSS">PROTOCOLS</a>
+                    <ul>
+                        <li><a href="#first-protocols">HTTP methods</a></li>
+                        <li><a href="#second-protocols">HTTP status code</a></li>
+                        <li><a href="#third-protocols">DNS list by types</a></li>
+                        <li><a href="#fourth-protocols">Identifying google´s IP</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <h1>HTML</h1>
+    <div class="wrapper-1" id="HTML">
+        <div class="box" id="first-html">
+            <h2>h1</h2>
+            <p>The h1 to h6 tags are used to define HTML headings</p>
+            <br>
+            <p>&lt;h1&gt;Title&lt;/h1&gt;</p>
+            <h2>Title</h2>
+        </div>
+        <div class="box" id="second-html">
+            <h2>table</h2>
+            <p>defines an HTML table</p>
+            <br>
+            <p>&lt;table&gt;&lt;/table&gt;</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="box" id="third-html">
+            <h2>hr</h2>
+            <p>draws a horizontal line</p>
+            <br>
+            <p>&lt;hr&gt;</p>
+            <hr>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <hr>
+        </div>
+        <div class="box" id="fourth-html">
+            <h2>input</h2>
+            <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p>
+            <br>
+            <p>&lt;input attributes&gt;</p>
+            <label for="name">Your name</label>
+            <br>
+            <input type="text" id="name">
+            <br><br>
+            <span id="question">Question</span>
+            <br>
+            <input type="radio" name="answer">
+            <span>answer</span>
+            <br>
+            <input type="radio" name="answer">
+            <span>answer</span>
+            <br>
+            <input type="radio" name="answer">
+            <span>answer</span>
+        </div>
+        <div class="box" id="fifth-html">
+            <h2>button</h2>
+            <p>Clickable button</p>
+            <br>
+            <p>&lt;button&gt;Button&lt;/button&gt;</p>
+            <button>Button</button>
+        </div>
+    </div>
+    <h1>CSS</h1>
+    <div class="wrapper-2" id="CSS">
+        <div class="box" id="first-CSS">
+            <h2>background</h2>
+            <p>specifies the background of an element</p>
+            <br>
+            <p>background: [];</p>
+            <div id="bkg-ex">
+                <p>Text<p></p>
+            </div>
+        </div>
+        <div class="box" id="second-CSS">
+            <h2>opacity</h2>
+            <p>specifies the opacity/transparency of an element</p>
+            <p>opacity: 0.8;</p>
+            <div id="fst"></div>
+            <div id="snd"></div>
+            <div id="trd"></div>
+            <div id="fth"></div>
+        </div>
+        <div class="box" id="third-CSS">
+            <h2>line-height</h2>
+            <p>specifies the height of a line</p>
+            <br>
+            <p>line-height: 1.5;</p>
+            <br>
+            <p class="height-example">Lorem ipsum dolor</p>
+            <p class="height-example">Lorem ipsum dolor</p>
+        </div>
+        <div class="box" id="fourth-CSS">
+            <h2>text-transform</h2>
+            <p>controls the capitalization of text</p>
+            <br>
+            <p>text-transform: uppercase;</p>
+            <p>LOREM Ipsum Dolor Sit AMET, CONSECTETUR adipisicing elit. VITAE, DOLORE</p>
+        </div>
+        <div class="box" id="fifth-CSS">
+            <h2>border</h2>
+            <p>specifies the style of the outline</p>
+            <br>
+            <p>border-bottom: 2px solid #666</p>
+            <div></div>
+        </div>
+        <div class="box" id="sixth-CSS">
+            <h2>font-size</h2>
+            <p>specifies the font size of the item.</p>
+            <p>%,px,rem,inherit</p>
+            <br>
+            <p>font-size:36px;</p>
+            <p id="font-text">LOREM Ipsum Dolor Sit AMET, CONSECTETUR adipisicing elit. VITAE, DOLORE</p>
+        </div>
+    </div>
+    <h1>PROTOCOLS</h1>
+    <div class="wrapper-3" id="PROTOCOLS">
+        <div class="box" id="first-protocols">
+            <h3>HTTP methods</h3>
+            <p> 
+                GET - use this type of requests to retrieve
+                resource representation/information only —
+                and not to modify it in any way
+            </p>
+            <p>
+                POST - used to create a new resource into the
+                collection of resources
+            </p>
+            <p>
+                PUT - use it primarily to update existing
+                resource (if the resource does not exist then
+                API may decide to create a new resource or
+                not)
+            </p>
+            <p>
+                DELETE - used to delete resources (identified
+                by the Request-URI)
+            </p>
+            <p>
+                PATCH - HTTP PATCH requests are to make
+                partial update on a resource
+            </p>
+        </div>
+        <div class="box" id="second-protocols">
+            <h3>HTTP status code</h3>
+            <p>
+                1xx: Informational <br>
+                example: 100 Continue
+            </p>
+            <p>
+                2xx: Success <br>
+                example: 201 Created
+            </p>
+            <p>
+                3xx: Redirection <br>
+                example: 301 Moved Permanently
+            </p>
+            <p>
+                4xx: Client Error <br>
+                example: 404 Not Found
+            </p>
+            <p>
+                5xx: Server Error <br>
+                example: 500 Internal Server Error
+            </p>
+        </div>
+        <div class="box" id="third-protocols">
+            <h3>DNS list by types</h3>
+            <p>
+                A. (address record) - specifies IP address
+                (Pv4) for given host. A records are used for
+                conversion of domain names to
+                corresponding IP addresses
+            </p>
+            <p>
+                AAAA (IPV6 address record) - specifies IPV6
+                address for given host. So it works the same
+                way as the A record and the difference is the
+                type of IP address
+            </p>
+            <p>
+                CNAME (canonical name record) - specifies a
+                domain name that has to be queried in order
+                to resolve the original DNS query. Therefore
+                CNAME records are used for creating aliases
+                of domain names, CNAME records are truly
+                useful when we want to alias our domain to
+                an external domain, In other cases we can
+                remove CNAME records and replace them
+                with A records and even decrease
+                performance overhead
+            </p>
+            <p>
+                HINFO (Host Information records) - used to
+                acquire general information about a host. The
+                record specifies type of CPU and OS. The
+                HINFO record data provides the possibility to
+                use operating system specific protocols when.
+                two hosts want to communicate. For security
+                reasons the HINFO records are not typically
+                used on public servers
+            </p>
+            <p>
+                ISDN (Integrated Services Digital Network
+                records) - specifies ISDN address for a host.
+                An ISDN address is a telephone number that
+                consists of a country code, a national
+                destination code, a ISDN Subscriber number
+                and, optionally, a ISDN subaddress. The
+                function of the record is only variation of the
+                Azresource record function
+            </p>
+            <p>
+                MX (Mail exchanger record) - specifies a mail
+                exchange server for a DNS domain name. The
+                information is used by Simple Mail Transfer
+                Protocol (SMTP) to route emails to proper
+                hosts. Typically, there are more than one mail
+                exchange server for a DNS domain and each
+                of them have set priority
+            </p>
+            <p>
+                NS (name server) - specifies an authoritative
+                name server for given host
+            </p>
+            <p>
+                PTR (Reverse-lookup Pointer records) - As
+                opposed to forward DNS resolution (A and AAAA DNS records), 
+                the PTR record is used to
+                look up domain names based on an IP address
+            </p>
+            <p>
+                SOA (Start of Authority records) - The record
+                specifies core information about a DNS zone,
+                including the primary name server, the email
+                of the domain administrator, the domain
+                serial number, and several timers relating to
+                refreshing the zone
+            </p>
+            <p>
+                TXT (Text records) - The text record can hold
+                arbitrary non-formatted text string. Typically,
+                the record is used by Sender Policy
+                Framework (SPF) to prevent fake emails to
+                appear to be sent by you
+            </p>
+        </div>
+        <div class="box" id="fourth-protocols">
+            <h3>Identifying google's IP</h3>
+            <p>To identify google.com IP, follow the next steps:</p>
+            <ol>
+                <li>open Terminal</li>
+                <li>paste and run the command nslookup google.com</li>
+            </ol>
+            <p>
+                As result, you will receive "name" and "address": <br>
+                Name: google.com.ua <br>
+                Address: 216 58,215.99
+            </p>
+            <p>
+                Repeat steps 1 and 2 to identify google.com.ua IP
+            </p>
+        </div>
+    </div>
+</body>
+</html>

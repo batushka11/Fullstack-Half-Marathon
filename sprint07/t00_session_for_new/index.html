@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session for new</title>
+    <style>
+        form {
+            border: 2px solid gray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Session for new</h1>
+    <form action="/form-hero" method="POST">
+        <fieldset>
+            <legend>About the Superhero</legend>
+            <br>
+            <label for="Real-name">Real Name</label>
+            <input type="text" name="realName" placeholder="Superhero real name" autofocus id="Real-name" required>
+            <label for="Superhero-name">Current Alias</label>
+            <input type="text" name="superheroName" placeholder="Superhero alias" id="Superhero-name" required>
+            <label for="Age">Age</label>
+            <input type="number" name="age" min="1" max="999" step="1" id="Age" required>
+            <br><br>
+            <label for="About">About</label>
+            <textarea rows="5" cols="70" maxlength="500" name="about" placeholder="Information about the superhero, max 500 symbols" id="About" required></textarea>
+            <br><br>
+            <label for="Photo">Photo:</label>
+            <input type="file" name="photo" id="Photo">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Powers</legend>
+            <br>
+            <input type="checkbox" name="powers" value="Strength" id="Strength">
+            <label for="Strength">Strength</label>
+            <input type="checkbox" name="powers" value="Speed" id="Speed">
+            <label for="Speed">Speed</label>
+            <input type="checkbox" name="powers" value="Intelligence" id="Intelligence">
+            <label for="Intelligence">Intelligence</label>
+            <input type="checkbox" name="powers" value="Teleportation" id="Teleportation">
+            <label for="Teleportation">Teleportation</label>
+            <input type="checkbox" name="powers" value="Immortal" id="Immortal">
+            <label for="Immortal">Immortal</label>
+            <input type="checkbox" name="powers" value="Another" id="Another">
+            <label for="Another">Another</label>
+            <br><br>
+            <span>Level of control</span>
+            <input type="range" name="controlLevel" min="0" max="10" step="1" value="1">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Publicity</legend>
+            <br>
+            <input type="radio" name="origin" value="UNKNOWN" id="UNKNOWN" required>
+            <label for="UNKNOWN">UNKNOWN</label>
+            <input type="radio" name="origin" value="LIKE A GHOST" id="LIKE-A-GHOST">
+            <label for="LIKE-A-GHOST">LIKE A GHOST</label>
+            <input type="radio" name="origin" value="I AM IN COMICS" id="I-AM-IN-COMICS">
+            <label for="I-AM-IN-COMICS">I AM IN COMICS</label>
+            <input type="radio" name="origin" value="I HAVE FUN CLUB" id="I-HAVE-FUN-CLUB">
+            <label for="I-HAVE-FUN-CLUB">I HAVE FUN CLUB</label>
+            <input type="radio" name="origin" value="SUPERSTAR" id="SUPERSTAR">
+            <label for="SUPERSTAR">SUPERSTAR</label>
+            <br><br>
+        </fieldset>
+        <br>
+        <input type="reset" value="CLEAR">
+        <input type="submit" value="SEND">
+        <br><br>
+    </form>
+</body>
+</html>

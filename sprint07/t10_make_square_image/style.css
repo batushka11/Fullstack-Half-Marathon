@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+
+input {
+    width: 400px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-container img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}

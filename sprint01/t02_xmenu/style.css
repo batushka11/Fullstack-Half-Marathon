@@ -1,0 +1,73 @@
+body{
+    background-color: yellow;
+}
+h1{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+.Navi{
+    display: flex;
+    justify-content: center;
+}
+
+.dropbtn-1, .dropbtn-4 {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 128px;
+    text-align: center;
+}
+
+.dropdown-1,.dropdown-4{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    padding: 1px;
+}
+
+.dropdown-1-content,.dropdown-4-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-1-content-2, .dropdown-1-content-3, .dropdown-4-content-2,
+.dropdown-4-content-3, .dropdown-4-content-4 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translate(160px, -42px);
+}
+
+.dropdown-1-content a,.dropdown-1-content-2 a, .dropdown-1-content-3 a, .dropdown-4-content a, .dropdown-4-content-2 a,
+.dropdown-4-content-3 a, .dropdown-4-content-4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-1:hover .dropdown-1-content, .dropdown-4:hover .dropdown-4-content {display: block;}
+
+.dropdown-1:hover .dropbtn-1, .dropdown-4:hover .dropbtn-4 {background-color: darkgoldenrod;}
+
+.dropbtn-1-1:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-2:hover .dropdown-1-content-2 ,.dropdown-3:hover .dropdown-1-content-3{ display: block;}
+
+.dropdown-1-content-2 a:hover, .dropdown-1-content-3 a:hover, .dropdown-4-content-2 a:hover, .dropdown-4-content-3 a:hover, .dropdown-4-content-4 a:hover{
+    background-color: black;
+    color: white;
+}
+
+.dropdown-5:hover .dropdown-4-content-2, .dropdown-6:hover .dropdown-4-content-3, .dropdown-7:hover .dropdown-4-content-4 { display: block;}

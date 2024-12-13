@@ -1,0 +1,24 @@
+.main {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key {
+    color: #9f000e;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 10px;
+    background-color: slategrey;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.wrapper .wrapper {
+    width: auto;
+}

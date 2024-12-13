@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Settings</h1>
+    <div class="main">
+        <div class="right-bar">
+            <img src="assets/images/artistic-brush.png" alt="brush">
+            <br>
+            <img src="assets/images/user-icon.png" alt="user">
+            <br>
+            <img src="assets/images/sms-speech-bubble.png" alt="sms">
+            <br>
+            <img src="assets/images/computer-screen.png" alt="screen">
+        </div>
+        <div class="menu">
+            <div class="left-side">
+                <div>
+                    <label for="typeface">Typeface</label>
+                    <br><br>
+                    <select name="typeface" id="typeface" >
+                        <option value="Acunim Pro">Acunim Pro</option>
+                        <option value="Comic Sans">Comic Sans</option>
+                        <option value="Times New Roman" disabled>Times New Roman</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Weight</span>
+                    <br><br>
+                    <input type="checkbox" id="regular" class="weight-checkbox">
+                    <label for="regular" class="weight">Regular</label>
+                    <input type="checkbox" id="bold" class="weight-checkbox">
+                    <label for="bold" class="weight">Bold</label>
+                </div>
+                <div>
+                    <label for="myRange">Size</label>
+                    <br><br><br>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <br>
+                    <span id="small">A</span>
+                    <span id="big">A</span>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="switch_box box_1">
+                    <label for="theme" id="theme-select">Dark UI</label>
+                    <input type="checkbox" class="switch_1" id="theme">
+                    </div>
+                <div class="colors">
+                    <span>Color</span>
+                    <br>
+                    <input type="checkbox" class="color-checkboxes" id="blue">
+                    <label for="blue" class="color-text blue"></label>
+                    <input type="checkbox" class="color-checkboxes" id="green">
+                    <label for="green" class="color-text green"></label>
+                    <input type="checkbox" class="color-checkboxes" id="purple">
+                    <label for="purple" class="color-text purple"></label>
+                    <input type="checkbox" class="color-checkboxes" id="yellow">
+                    <label for="yellow" class="color-text yellow"></label>
+                    <input type="checkbox" class="color-checkboxes" id="orange">
+                    <label for="orange" class="color-text orange"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

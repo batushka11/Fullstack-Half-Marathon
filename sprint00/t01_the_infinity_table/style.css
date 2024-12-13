@@ -1,0 +1,49 @@
+#Header{
+    background-color: black;
+    color: white;
+}
+
+#Soul{
+    background-color: #d6923d;
+}
+
+#Time{
+    background-color: #008001;
+}
+
+#Space{
+    background-color: #005792;
+}
+
+#Mind{
+    background-color: #fffe04;
+}
+
+#Reality{
+    background-color: #c12a2e;
+}
+
+#Power{
+    background-color: #8075b7;
+}
+
+img{
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    border: 2px solid #e2e1e5;
+    padding: 15px;
+}
+
+
+
+
+

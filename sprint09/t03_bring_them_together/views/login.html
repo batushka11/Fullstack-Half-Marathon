@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <h1>Login to Oracle RedBull Team</h1>
+    <form class="form" method="post" action="/login" enctype="multipart/form-data" id="reg">
+        <input type="text" maxlength="30" placeholder="Login" name="Login" required>
+        <br>
+        <input type="password" placeholder="Password" name="Password" required id="pwd">
+        <br>
+        <a href="/password_remind" class="forgot-password">Forgot password?</a>
+        <br>
+        <input type="submit" class="btn" id="btn" value="Submit">
+        <br>
+        <span>Don't have an account?</span>
+        <a href="/registration" class="sign-up">Sign Up</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 182px;
+    position: relative;
+    float: left;
+}
+
+.heroes{
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin: 20px;
+}
+
+p{
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+span{
+    font-size: 9px;
+    color: rgba(255,255,255,0.5);
+}
+
+#Capitan-America{
+    background: linear-gradient(#4568DC,#B06AB3);
+}
+
+#Iron-man{
+    background: linear-gradient(#e52d27,#b31217);
+}
+
+#Black-Widow{
+    background: linear-gradient(90deg,#000,#61045F);
+}
+
+#Spider-Man{
+    background: linear-gradient(#e52d27,#000);
+}
+
+#Capitan-America-img{
+    bottom: 62px;
+}
+
+#Iron-man-img{
+   bottom: 62px;
+}
+
+#Black-Widow-img{
+    bottom: 62px;
+}
+
+#Spider-Man-img{
+    bottom: 38px;
+}

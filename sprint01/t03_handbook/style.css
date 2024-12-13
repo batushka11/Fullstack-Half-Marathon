@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(232, 232, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    background-color: whitesmoke;
+    margin: 20px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+p, h2{
+    margin: 40px 10px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+p{
+    font-size: 24px;
+}
+
+h1{
+    text-align: center;
+    margin: 40px;
+}
+
+table{
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+}
+
+hr{
+    margin: 0 10px;
+}
+
+input,label,button,#question{
+    margin-left: 20px;
+}
+
+label, #question{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 0;
+    height: 40px;
+    width: 80px;
+    border-radius: 2px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+#bkg-ex{
+    background-color: red;
+    height: 150px;
+    margin-left: 10px;
+}
+
+#bkg-ex p{
+    position: relative;
+    top: 60px;
+    margin-left: 0;
+}
+
+#fst{
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+#snd{
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    opacity: 0.6;
+}
+
+#trd{
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    opacity: 0.4;
+}
+
+#fth{
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    opacity: 0.2;
+}
+
+.height-example{
+    line-height: 1.5;
+}
+
+#fifth-CSS div{
+    height: 150px;
+    width: 300px;
+    background-color: gray;
+    border-bottom: 2px solid red;
+    margin-left: 20px;
+}
+
+#font-text{
+    font-size: 36px;
+}
+
+.wrapper-1, .wrapper-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.wrapper-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media only screen and (min-width:320px){
+    .wrapper-1, .wrapper-2, .wrapper-3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .wrapper-1, .wrapper-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .wrapper-3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .wrapper-1, .wrapper-2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .wrapper-3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Superhero Application</title>
+    </head>
+    <body>
+        <h1>New Avenger application</h1>
+        <p><strong>Photo:</strong> <span id="photoInfo"></span></p>
+        <form id="avengerForm" enctype="multipart/form-data">
+            <fieldset>
+                <legend>About candidate</legend>
+                <br>
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Tell your name" autofocus id="Name" name="Name">
+                <label for="E-mail">E-mail</label>
+                <input type="text" placeholder="Tell your e-mail" id="E-mail" name="E-mail">
+                <label for="Age">Age</label>
+                <input type="number" min="1" max="999" step="1" id="Age" name="Age">
+                <br><br>
+                <label for="About">About</label>
+                <textarea rows="5" cols="70" maxlength="500" placeholder="Tell about yourself, max 500 symbols" id="About" name="About"></textarea>
+                <br><br>
+                <label for="Photo">Photo:</label>
+                <input type="file" id="Photo" name="Photo">
+                <br><br>
+            </fieldset>
+            <br>
+            <input type="reset" value="CLEAR">
+            <input type="submit" value="SEND">
+            <br><br>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.draggable {
+    border: none;
+}
+
+.not-draggable {
+    border: 3px dashed black;
+}
+
+#square1{
+    top: 200px;
+    left: 134px;
+    background-color: red;
+}
+
+#square2{
+    top: 400px;
+    left: 134px;
+    background-color: green;
+}
+
+#square3{
+    top: 200px;
+    left: 400px;
+    background-color: blue;
+}
+
+#square4{
+    top: 300px;
+    left: 237px;
+    background-color: yellow;
+}
+
+#square5{
+    top: 223px;
+    left: 800px;
+    background-color: orange;
+}
+
+#square6{
+    top: 60px;
+    left: 780px;
+    background-color: purple;
+}

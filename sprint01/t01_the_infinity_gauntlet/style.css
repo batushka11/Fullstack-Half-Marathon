@@ -1,0 +1,11 @@
+.Gauntlet{
+    height: 200px;
+}
+
+.man{
+    height: 100px;
+}
+
+.Gauntlet:hover ~ .man:nth-child(odd){
+    opacity: 0;
+}

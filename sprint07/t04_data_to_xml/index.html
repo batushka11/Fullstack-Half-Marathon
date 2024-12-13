@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="t04. Data to XML">
+        <title>Data to XML</title>
+        <style>
+            table td {
+                width: 50%;
+            }
+            table{
+                width: 95%; 
+                border: 3px solid grey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Avenger Quote to XML</h1>
+        <table>
+            <tr>
+                <td id="before"></td>
+                <td id="after"></td>
+            </tr>
+        </table>
+
+        <script>
+            window.onload = () => {
+            fetch('/XML')
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById('before').innerText = data.before;
+                    document.getElementById('after').innerText = data.after;
+                });
+        };
+        </script>
+    </body>
+</html>
